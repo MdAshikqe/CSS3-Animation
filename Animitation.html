@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>criceket match</title>
+    <style>
+        .Field {
+            width: 800px;
+            height: 350px;
+            border: 1px solid black;
+
+        }
+
+        .ball {
+            width: 35px;
+            height: 35px;
+            background-color: red;
+            border-radius: 30px;
+            position: relative;
+            top: -50px;
+            left: 200px;
+            transition: transform 1s ease-out 0.2s;
+
+
+        }
+
+        .Field:hover .ball {
+            transform: translate(500px, -100px);
+        }
+
+        .bat {
+            width: 350px;
+            transition: transform 0.6s ease-in;
+
+        }
+
+        .Field:hover .bat {
+            transform: rotate(-60deg);
+            transform-origin: top right;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="Field">
+            <img class="bat" src="Image/cricBat.jpg" alt="">
+            <div class="ball"></div>
+        </div>
+    </section>
+
+</body>
+
+</html>
